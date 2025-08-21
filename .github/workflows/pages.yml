@@ -1,7 +1,8 @@
 name: Build and Deploy Jekyll to GitHub Pages
+
 on:
   push:
-    branches: [ master ]   # 你的默认分支
+    branches: [ master ]   # 如果默认分支是 main，就改成 [ main ]
   workflow_dispatch:
 
 permissions:
@@ -17,14 +18,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: true
-      - run: bundle install --without development
-      - run: bundle exec jekyll build --trace
-      - uses: actions/upload-pages-artifact@v3
+          bundler-cache: false   # 关闭 bundler 的缓存/部署模式，避免锁文件冲突
+
+      - name: Allow lock update (no deployment mode)
+        run: bundle config set --local deployment false
+
+      - name: Install dependencies
+        run: bundle install --jobs 4
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --trace
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
 
@@ -35,5 +51,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
