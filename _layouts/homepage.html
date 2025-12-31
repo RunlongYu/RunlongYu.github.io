@@ -60,6 +60,48 @@
       margin-top: 2px;
     }
 
+    /* ===== Header spacing tune (balanced) ===== */
+header .header-avatar{
+  display: block;
+  margin: 0 auto 18px !important;
+}
+
+header .header-name{
+  margin: 0 0 8px !important;
+  line-height: 1.15;
+}
+
+header .header-role{
+  display: block;
+  margin: 0 0 14px !important;
+  line-height: 1.3;
+}
+
+/* each affiliation line gets breathing room */
+header a.header-line{
+  display: block !important;
+  margin: 0 0 10px !important;
+  line-height: 1.45;
+}
+
+/* force email onto its own line (and prevent sticking to previous line) */
+header a.header-email{
+  display: block !important;
+  margin: 10px auto 0 !important;
+  width: fit-content;
+  white-space: normal !important;
+}
+
+header a.header-email email{
+  display: inline-block;
+}
+
+/* optional: give a tiny separation before icons without using <br> */
+header .social-icons{
+  margin-top: 18px !important;
+}
+
+
     .social-icons {
       margin: 14px 0 6px;
     }
@@ -126,11 +168,25 @@
     <header>
 
 
-<a class="image avatar"><img src="./assets/img/Runlongyu-portrait-v2.jpg" alt="runlongyu" /> </a> <br> 
-<h1>Runlong Yu</h1> <position style="font-size:1.10rem;">Assistant Professor</position> <br> 
-<a href="https://cs.ua.edu/" rel="noopener" target="_blank"> <autocolor>Department of Computer Science,</autocolor> </a> <br>
- <a href="https://www.ua.edu/" rel="noopener" target="_blank"> <autocolor>University of Alabama</autocolor> </a> <br>
- <!-- <a href="https://maps.app.goo.gl/Av4dYNMJR6G5yHRx6" rel="noopener" target="_blank"> <h4>147 N Craig St, Pittsburgh PA 15213</h4> </a> --> <a href="mailto: ryu5@ua.edu" style="color:#6d6d6d"> <email> ryu5@ua.edu </email> </a>
+<a class="image avatar header-avatar">
+  <img src="./assets/img/Runlongyu-portrait-v2.jpg" alt="runlongyu" />
+</a>
+
+<h1 class="header-name">Runlong Yu</h1>
+
+<position class="header-role" style="font-size:1.10rem;">Assistant Professor</position>
+
+<a class="header-line" href="https://cs.ua.edu/" rel="noopener" target="_blank">
+  <autocolor>Department of Computer Science,</autocolor>
+</a>
+
+<a class="header-line" href="https://www.ua.edu/" rel="noopener" target="_blank">
+  <autocolor>University of Alabama</autocolor>
+</a>
+
+<a class="header-email" href="mailto: ryu5@ua.edu" style="color:#6d6d6d">
+  <email>ryu5@ua.edu</email>
+</a>
 
 
       <br>
