@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=" en-US">
+<html lang="en-US">
 
 <head>
   <title>Runlong Yu</title>
@@ -7,29 +7,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.">
+  <meta name="description" content="Runlong Yu is an Assistant Professor of Computer Science at The University of Alabama working on AI for science, scientific machine learning, foundation models, GeoAI, and environmental applications.">
+  <meta name="keywords" content="Runlong Yu, AI for Science, scientific machine learning, physics-guided machine learning, foundation models, generative AI, GeoAI, environmental AI">
 
-  <meta name="keywords" content="minimal light">
+  <link rel="canonical" href="https://runlongyu.github.io/">
+  <link rel="icon" media="(prefers-color-scheme: dark)" href="./assets/img/ua-square-logo.png" type="image/png">
+  <link rel="icon" media="(prefers-color-scheme: light)" href="./assets/img/ua-square-logo.png" type="image/png">
+  <script src="./assets/js/favicon-switcher.js"></script>
 
-
-  <link rel="canonical" href="https://minimal-light-theme.yliu.me/" />
-
-
-  <link rel="icon" media="(prefers-color-scheme:dark)" href="./assets/img/ua-square-logo.png" type="image/png" />
-  <link rel="icon" media="(prefers-color-scheme:light)" href="./assets/img/ua-square-logo.png" type="image/png" />
-  <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
-
-  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css
-    integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
-  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
-    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin=anonymous>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css"
+    integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
 
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/publications.css">
 
-  <!-- Spacing / layout overrides (no content changes) -->
   <style>
-    /* A consistent vertical rhythm without touching text content */
     .wrapper {
       padding-top: 28px;
       padding-bottom: 28px;
@@ -39,71 +33,50 @@
       padding-bottom: 12px;
     }
 
-    header .image.avatar {
+    header .header-avatar {
       display: block;
-      margin-bottom: 14px;
+      margin: 0 auto 18px !important;
     }
 
-    header h1 {
-      margin: 10px 0 6px;
+    header .header-name {
+      margin: 0 0 8px !important;
       line-height: 1.15;
     }
 
-    header position {
+    header .header-role {
       display: block;
-      margin: 2px 0 6px;
-      line-height: 1.25;
+      margin: 0 0 14px !important;
+      line-height: 1.3;
     }
 
-    header email {
+    header .header-affiliation {
+      color: #57068c;
+    }
+
+    header .header-email-text {
+      font-family: "Ubuntu Mono", monospace;
+      font-size: 19px;
+    }
+
+    header a.header-line {
+      display: block !important;
+      margin: 0 0 10px !important;
+      line-height: 1.45;
+    }
+
+    header a.header-email {
+      display: block !important;
+      margin: 10px auto 0 !important;
+      width: fit-content;
+      white-space: normal !important;
+    }
+
+    header a.header-email .header-email-text {
       display: inline-block;
-      margin-top: 2px;
     }
 
-    /* ===== Header spacing tune (balanced) ===== */
-header .header-avatar{
-  display: block;
-  margin: 0 auto 18px !important;
-}
-
-header .header-name{
-  margin: 0 0 8px !important;
-  line-height: 1.15;
-}
-
-header .header-role{
-  display: block;
-  margin: 0 0 14px !important;
-  line-height: 1.3;
-}
-
-/* each affiliation line gets breathing room */
-header a.header-line{
-  display: block !important;
-  margin: 0 0 10px !important;
-  line-height: 1.45;
-}
-
-/* force email onto its own line (and prevent sticking to previous line) */
-header a.header-email{
-  display: block !important;
-  margin: 10px auto 0 !important;
-  width: fit-content;
-  white-space: normal !important;
-}
-
-header a.header-email email{
-  display: inline-block;
-}
-
-/* optional: give a tiny separation before icons without using <br> */
-header .social-icons{
-  margin-top: 18px !important;
-}
-
-
-    .social-icons {
-      margin: 14px 0 6px;
+    header .social-icons {
+      margin: 18px 0 6px !important;
     }
 
     .social-icons a {
@@ -115,13 +88,16 @@ header .social-icons{
     }
 
     section h2 {
-      margin: 26px 0 10px;
+      margin: 28px 0 10px;
       line-height: 1.25;
     }
 
-    section h4 {
-      margin: 14px 0 6px;
-      line-height: 1.25;
+    section h3 {
+      margin: 18px 0 7px;
+      line-height: 1.3;
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: #333;
     }
 
     section p {
@@ -129,403 +105,561 @@ header .social-icons{
     }
 
     section ul,
-    section ol,
-    section dir {
+    section ol {
       margin: 6px 0 14px;
       padding-left: 22px;
     }
 
     section li {
-      margin: 0 0 6px;
+      margin: 0 0 7px;
     }
 
-    /* Hide stray <br> that are inserted between list items (keep <br> inside <li>) */
-    section ul>br,
-    section ol>br,
-    section dir>br {
-      display: none;
+    .publication-list li {
+      margin-bottom: 12px;
     }
 
-    /* Make <dir> visually consistent with <ul> */
-    dir {
-      list-style-type: disc;
+    .publication-note {
+      display: block;
+      margin-top: 2px;
+      font-size: 0.92em;
     }
 
-    dir li {
-      list-style-type: disc;
+    .entry-list li {
+      margin-bottom: 11px;
     }
 
-    /* Avoid overly tight headings with negative inline margins (override if present) */
-    h2#publications {
-      margin: 26px 0 10px !important;
+    .date-label {
+      white-space: nowrap;
+    }
+
+    .service-list {
+      line-height: 1.7;
+    }
+
+    sup {
+      font-size: 0.72em;
+      line-height: 0;
+    }
+
+    section a,
+    section li,
+    section p {
+      overflow-wrap: anywhere;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      section h3 {
+        color: #eee6f3;
+      }
+
+      header .header-affiliation {
+        color: #ab82c5;
+      }
+    }
+
+    @media print, screen and (max-width: 960px) {
+      header,
+      section {
+        box-sizing: border-box;
+      }
+
+      header {
+        margin-left: 0;
+      }
     }
   </style>
-
 </head>
 
 <body>
   <div class="wrapper">
     <header>
+      <div class="image avatar header-avatar">
+        <img src="./assets/img/Runlongyu-portrait-v2.jpg" alt="Runlong Yu">
+      </div>
 
+      <h1 class="header-name">Runlong Yu</h1>
+      <span class="header-role" style="font-size: 1.10rem;">Assistant Professor</span>
 
-<a class="image avatar header-avatar">
-  <img src="./assets/img/Runlongyu-portrait-v2.jpg" alt="runlongyu" />
-</a>
-
-<h1 class="header-name">Runlong Yu</h1>
-
-<position class="header-role" style="font-size:1.10rem;">Assistant Professor</position>
-
-<a class="header-line" href="https://cs.ua.edu/" rel="noopener" target="_blank">
-  <autocolor>Department of Computer Science,</autocolor>
-</a>
-
-<a class="header-line" href="https://www.ua.edu/" rel="noopener" target="_blank">
-  <autocolor>University of Alabama</autocolor>
-</a>
-
-<a class="header-email" href="mailto: ryu5@ua.edu" style="color:#6d6d6d">
-  <email>ryu5@ua.edu</email>
-</a>
-
+      <a class="header-line" href="https://cs.ua.edu/" rel="noopener noreferrer" target="_blank">
+        <span class="header-affiliation">Department of Computer Science</span>
+      </a>
+      <a class="header-line" href="https://www.ua.edu/" rel="noopener noreferrer" target="_blank">
+        <span class="header-affiliation">The University of Alabama</span>
+      </a>
+      <a class="header-email" href="mailto:ryu5@ua.edu" style="color: #6d6d6d;">
+        <span class="header-email-text">ryu5@ua.edu</span>
+      </a>
 
       <div class="social-icons">
-
-        <a style="margin: 0 5px 0 0" href="https://scholar.google.com/citations?user=AoZhHP4AAAAJ&hl=zh-CN&oi=ao">
-          <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
+        <a href="https://scholar.google.com/citations?user=AoZhHP4AAAAJ&amp;hl=en" target="_blank"
+          rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+          <i class="ai ai-google-scholar" style="font-size: 1.2rem;"></i>
         </a>
-
-
-
-
-
-        <a style="margin: 0 5px 0 0" href="https://github.com/RunlongYu">
+        <a href="https://github.com/RunlongYu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+          title="GitHub">
           <i class="fab fa-github"></i>
         </a>
-
-
-
-        <a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/runlongyu/">
+        <a href="./assets/files/CV_RunlongYu_hp_202608.pdf" target="_blank" rel="noopener noreferrer"
+          aria-label="Curriculum Vitae" title="Curriculum Vitae">
+          <i class="fas fa-file-alt"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/runlongyu/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn" title="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
-
-        <a style="margin: 0 0 0 0" href="https://x.com/Eleven524223614">
+        <a href="https://x.com/Eleven524223614" target="_blank" rel="noopener noreferrer" aria-label="X"
+          title="X">
           <i class="fab fa-twitter"></i>
         </a>
-
       </div>
-      <br>
-
     </header>
-    <section>
 
+    <section>
       <h2 id="about-me">About Me</h2>
 
-      <p>I am an Assistant Professor in Computer Science at the <a href="https://www.ua.edu/" target="_blank">University of Alabama</a>.
-        Previously, I was a Postdoctoral Associate in Computer Science at the <a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a>, working under the mentorship of Prof.<a href="https://sites.pitt.edu/~xiaowei/" target="_blank"> Xiaowei Jia</a>. I earned my Ph.D. in Computer Science from the <a href="https://en.ustc.edu.cn/" target="_blank">University of Science and Technology of China (USTC)</a> in 2023. Prior to that, I received my B.Eng. in Computer Science from USTC in 2017.</p>
+      <p>I am an Assistant Professor in the <a href="https://cs.ua.edu/" target="_blank"
+          rel="noopener noreferrer">Department of Computer Science</a> at <a href="https://www.ua.edu/"
+          target="_blank" rel="noopener noreferrer">The University of Alabama</a> and an <strong>ALAAI Faculty
+          Fellow for Frontier AI</strong>. Previously, I was a Postdoctoral Associate in Computer Science at the <a
+          href="https://www.pitt.edu/" target="_blank" rel="noopener noreferrer">University of Pittsburgh</a>,
+        working with Prof. <a href="https://sites.pitt.edu/~xiaowei/" target="_blank"
+          rel="noopener noreferrer">Xiaowei Jia</a>. I earned my Ph.D. and B.Eng. in Computer Science from the <a
+          href="https://en.ustc.edu.cn/" target="_blank" rel="noopener noreferrer">University of Science and
+          Technology of China</a>.</p>
 
-      <p>My primary research interest is advancing artificial intelligence and data science to address real-world problems with significant societal and scientific impact. A central theme of my work lies at the intersection of machine learning, environmental and geospatial intelligence, and AI applications in science. I aim to develop modeling and reasoning systems that are grounded in real-world data, informed by domain knowledge, and centered on human decision-making, with applications to complex Earth system challenges. My work has been recognized by major community awards, including the IEEE ICDM Best BlueSky Paper Award (First Prize). To gain a more comprehensive understanding of my background, you can visit my <a href="./assets/files/Runlong_Yu_hp_202512.pdf" target="_blank">Curriculum Vitae</a>.
-      </p>
+      <p>My research advances AI for science through scientific and physics-guided machine learning, foundation
+        models, generative AI, and GeoAI. I develop grounded learning and reasoning methods for environmental and
+        Earth system applications, including LLM-based and multimodal decision-support systems. My work has been
+        recognized by the IEEE ICDM Best BlueSky Paper Award (First Prize). More details are available in my <a
+          href="./assets/files/CV_RunlongYu_hp_202608.pdf" target="_blank" rel="noopener noreferrer">Curriculum
+          Vitae</a>.</p>
 
-
-
-      <!-- <p>
-        <strong style="color: #FF0000;"> At the University of Alabama, I will build a research group with funded Ph.D. positions. I am looking for motivated students and collaborators interested in interdisciplinary AI research.
-          Contact: <a href="mailto: ryu5@ua.edu" style="color:#FF0000">
-            <email>
-              ryu5@ua.edu
-            </email>
-          </a> (Subject: PhD Application – Your Name) </strong>
-      </p> -->
-
-
+      <h2 id="recent-news">Recent News</h2>
+      <ul class="entry-list">
+        <li><strong>[May 2026]</strong> Named an ALAAI Faculty Fellow for Frontier AI.</li>
+        <li><strong>[2026]</strong> NASA award 80NSSC26K0971 was funded for an end-user-driven inland water quality
+          monitoring and decision-support system.</li>
+        <li><strong>[2026]</strong> Two papers were accepted to KDD 2026, including one in the Blue Sky Ideas Track
+          and one in the AI4Sciences Track.</li>
+        <li><strong>[2026]</strong> A survey paper was accepted to the IJCAI 2026 Survey Track.</li>
+        <li><strong>[2026]</strong> Three papers were accepted to SDM 2026.</li>
+        <li><strong>[Fall 2026]</strong> Teaching Artificial Intelligence for undergraduate, graduate, and online
+          students.</li>
+      </ul>
 
       <h2 id="research-interests">Research Areas &amp; Interests</h2>
-    <ul>
-  <li>
-    <strong>AI for Science &amp; Scientific Data Mining:</strong>
-    representation learning for spatiotemporal and graph-structured data;
-    self-supervised learning;
-    physics-guided machine learning;
-    physics-informed neural networks (PINNs);
-    neural operators for PDE-constrained physical systems;
-    process-based modeling and scientific data generation.
-  </li>
-
-  <li>
-    <strong>Generative AI &amp; Foundation Models:</strong>
-    large language models (LLMs) and multimodal foundation models;
-    diffusion models and flow matching;
-    conditional generation;
-    retrieval-augmented generation (RAG);
-    LLM-based agents;
-    knowledge-grounded reasoning;
-    semantic digital twins for scientific workflows and decision support.
-  </li>
-
-  <li>
-    <strong>GeoAI &amp; Environmental Applications:</strong>
-    data assimilation; inverse modeling; multiscale downscaling;
-    heatwave modeling and land surface temperature (LST) reconstruction;
-    satellite and remote sensing data mining;
-    ecosystem and aquatic system modeling; freshwater systems;
-    turbulence and flow simulation;
-    wildfire simulation and other environmental extremes;
-    carbon-neutral and sustainability-oriented modeling.
-  </li>
-
-  <li>
-    <strong>Optimization &amp; Recommender Systems (Earlier Work):</strong>
-    evolutionary computation for real-parameter optimization;
-    multi-objective optimization;
-    evolutionary feature selection;
-    recommender systems and collaborative filtering;
-    click-through rate prediction;
-    learning-to-rank and user modeling.
-  </li>
-</ul>
-
+      <ul>
+        <li><strong>AI for Science &amp; Scientific Machine Learning:</strong> physics-guided machine learning,
+          physics-informed neural networks, neural operators, PDE learning, scientific data mining, and
+          process-based modeling.</li>
+        <li><strong>Foundation Models &amp; Generative AI:</strong> large language and multimodal models, diffusion
+          models, flow matching, retrieval-augmented generation, agents, and knowledge-grounded reasoning.</li>
+        <li><strong>GeoAI &amp; Environmental Intelligence:</strong> geospatial reasoning, remote sensing,
+          multiscale prediction, Earth system and aquatic modeling, wildfire response, and scientific
+          decision-support systems.</li>
+        <li><strong>Optimization &amp; Recommender Systems (Earlier Work):</strong> evolutionary computation,
+          feature selection and interaction modeling, recommendation, click-through rate prediction, and
+          learning-to-rank.</li>
+      </ul>
 
       <h2 id="teaching">Teaching</h2>
-   
-
-<p>I teach <strong>CS 691-002: Physics-Guided Machine Learning</strong> in Spring 2026.</p>
-<ul>
-  <li><strong>Lectures:</strong> Tuesdays &amp; Thursdays, 2:00&ndash;3:15 PM.</li>
-  <li><strong>Location:</strong> Hardaway Hall 251.</li>
-  <li>The weekly schedule and office hours: <strong><a href="https://ualearn.blackboard.com/ultra/courses/_398591_1/outline" target="_blank">Blackboard Ultra Course Page</a></strong>.</li>
-</ul>
-
-<p>I taught <strong>CS 2756: Principles of Data Mining</strong> in Spring 2025.</p>
-<ul>
-  <li><strong>Lectures:</strong> Mondays &amp; Wednesdays, 6:00&ndash;7:15 PM.</li>
-  <li><strong>Location:</strong> SENSQ 6110.</li>
-  <li>The weekly schedule and office hours: <strong><a href="https://canvas.pitt.edu/courses/295598" target="_blank">Canvas Course Page</a></strong>.</li>
-</ul>
-
-<p>I taught <strong>CS 1656 / CS 2056: Introduction to Data Science</strong> in Fall 2024.</p>
-<ul>
-  <li><strong>Lectures:</strong> Tuesdays &amp; Thursdays, 1:00&ndash;2:15 PM.</li>
-  <li><strong>Location:</strong> IS 305.</li>
-  <li><strong>Recitations:</strong> Fridays, 2:00&ndash;2:50 PM (SENSQ 5129) or 3:00&ndash;3:50 PM (SENSQ 6110).</li>
-  <li>The weekly schedule and office hours: <strong><a href="https://canvas.pitt.edu/courses/274013" target="_blank">Canvas Course Page</a></strong>.</li>
-</ul>
+      <ul class="entry-list">
+        <li><strong>Instructor &mdash; Fall 2026</strong><br>
+          Artificial Intelligence (Undergraduate &amp; Graduate; Including Online)<br>
+          Face-to-Face Section: CS 465-001<br>
+          <strong>Lectures:</strong> Tuesdays &amp; Thursdays, 11:00 AM&ndash;12:15 PM<br>
+          <strong>Location:</strong> Lloyd Hall 132<br>
+          <strong>Course Page:</strong> <a href="https://ualearn.blackboard.com/ultra/courses/_410975_1/outline"
+            target="_blank" rel="noopener noreferrer">Blackboard Ultra Course Page</a><br>
+          Department of Computer Science, The University of Alabama</li>
+        <li><strong>Instructor &mdash; Spring 2026</strong><br>
+          CS 691-002: Physics-Guided Machine Learning (Graduate Course)<br>
+          Department of Computer Science, The University of Alabama</li>
+        <li><strong>Instructor &mdash; Spring 2025</strong><br>
+          CS 2756: Principles of Data Mining<br>
+          Department of Computer Science, University of Pittsburgh</li>
+        <li><strong>Instructor &mdash; Fall 2024</strong><br>
+          CS 1656 / CS 2056: Introduction to Data Science<br>
+          Department of Computer Science, University of Pittsburgh</li>
+      </ul>
 
       <h2 id="awards">Honors and Awards</h2>
       <ul>
-        <li><strong>[Nov. 2025]</strong> &nbsp;&nbsp;&nbsp; IEEE ICDM Best BlueSky Paper Award (First Prize)</li>
-        <li><strong>[Nov. 2025]</strong> &nbsp;&nbsp;&nbsp; IEEE ICDM Best Paper Award Candidate</li>
-        <li><strong>[Sep. 2022]</strong> &nbsp;&nbsp;&nbsp; Outstanding Student Leadership Award </li>
-        <li><strong>[May 2022]</strong> &nbsp;&nbsp;&nbsp; Outstanding Student Award of "Six Good" College Students </li>
-        <li><strong>[Nov. 2021]</strong> &nbsp;&nbsp;&nbsp; Gold Medal of the 7th Anhui Province "Internet+" College Student Innovation Competition </li>
-        <li><strong>[Sep. 2021]</strong> &nbsp;&nbsp;&nbsp; USTC Postgraduate First-Class Scholarship </li>
-        <li><strong>[Jul. 2021]</strong> &nbsp;&nbsp;&nbsp; China Scholarship Council Scholarship </li>
-        <li><strong>[Jan. 2021]</strong> &nbsp;&nbsp;&nbsp; Champion of the CCF BDCI Fighting Epidemics Big Data Charity Challenge [<a href="http://news.ustc.edu.cn/info/1056/72300.htm" target="-parent">Anhui Daily</a>] [<a href="http://en.cs.ustc.edu.cn/2021/0129/c23602a470171/page.htm" target="-parent">USTC News</a>] </li>
-        <li><strong>[Jan. 2021]</strong> &nbsp;&nbsp;&nbsp; USTC Special Scholarship </li>
-        <li><strong>[Sep. 2020]</strong> &nbsp;&nbsp;&nbsp; USTC Postgraduate First-Class Scholarship </li>
-        <li><strong>[Dec. 2019]</strong> &nbsp;&nbsp;&nbsp; China National Scholarship </li>
-        <li><strong>[Sep. 2019]</strong> &nbsp;&nbsp;&nbsp; USTC Postgraduate First-Class Scholarship </li>
-        <li><strong>[Aug. 2019]</strong> &nbsp;&nbsp;&nbsp; KDD CUP Regular ML Track PaddlePaddle Special Award </li>
-        <li><strong>[Dec. 2018]</strong> &nbsp;&nbsp;&nbsp; The Third Runner-up of China (Hefei) Big Data and Artificial Intelligence Innovation Application Competition </li>
-        <li><strong>[Dec. 2018]</strong> &nbsp;&nbsp;&nbsp; Suzhou Industrial Park Scholarship </li>
-        <li><strong>[Oct. 2018]</strong> &nbsp;&nbsp;&nbsp; GDC Technology Scholarship </li>
-        <li><strong>[Sep. 2018]</strong> &nbsp;&nbsp;&nbsp; USTC Postgraduate First-Class Scholarship </li>
-        <li><strong>[Sep. 2017]</strong> &nbsp;&nbsp;&nbsp; USTC Postgraduate First-Class Scholarship </li>
-        <li><strong>[Oct. 2012]</strong> &nbsp;&nbsp;&nbsp; First Prize of Chinese Physics Olympiad </li>
+        <li><strong>[May 2026]</strong> ALAAI Faculty Fellow for Frontier AI, Alabama Center for the Advancement of
+          Artificial Intelligence (ALAAI)</li>
+        <li><strong>[Nov. 2025]</strong> IEEE ICDM Best BlueSky Paper Award (First Prize)</li>
+        <li><strong>[Nov. 2025]</strong> IEEE ICDM Best Paper Award Candidate</li>
+        <li><strong>[Sep. 2022]</strong> Outstanding Student Leadership Award</li>
+        <li><strong>[May 2022]</strong> Outstanding Student Award of &ldquo;Six Good&rdquo; College Students</li>
+        <li><strong>[Nov. 2021]</strong> Gold Medal of the 7th Anhui Province &ldquo;Internet+&rdquo; College Student
+          Innovation Competition</li>
+        <li><strong>[Sep. 2021]</strong> USTC Postgraduate First-Class Scholarship</li>
+        <li><strong>[Jul. 2021]</strong> China Scholarship Council Scholarship</li>
+        <li><strong>[Jan. 2021]</strong> Champion of the CCF BDCI Fighting Epidemics Big Data Charity Challenge [<a
+            href="http://news.ustc.edu.cn/info/1056/72300.htm" target="_blank" rel="noopener noreferrer">Anhui
+            Daily</a>] [<a href="http://en.cs.ustc.edu.cn/2021/0129/c23602a470171/page.htm" target="_blank"
+            rel="noopener noreferrer">USTC News</a>]</li>
+        <li><strong>[Jan. 2021]</strong> USTC Special Scholarship</li>
+        <li><strong>[Sep. 2020]</strong> USTC Postgraduate First-Class Scholarship</li>
+        <li><strong>[Dec. 2019]</strong> China National Scholarship</li>
+        <li><strong>[Sep. 2019]</strong> USTC Postgraduate First-Class Scholarship</li>
+        <li><strong>[Aug. 2019]</strong> KDD CUP Regular ML Track PaddlePaddle Special Award</li>
+        <li><strong>[Dec. 2018]</strong> The Third Runner-up of China (Hefei) Big Data and Artificial Intelligence
+          Innovation Application Competition</li>
+        <li><strong>[Dec. 2018]</strong> Suzhou Industrial Park Scholarship</li>
+        <li><strong>[Oct. 2018]</strong> GDC Technology Scholarship</li>
+        <li><strong>[Sep. 2018]</strong> USTC Postgraduate First-Class Scholarship</li>
+        <li><strong>[Sep. 2017]</strong> USTC Postgraduate First-Class Scholarship</li>
+        <li><strong>[Oct. 2012]</strong> First Prize of Chinese Physics Olympiad</li>
       </ul>
-
 
       <h2 id="publications">Selected Publications</h2>
 
-      <p><strong>&nbsp;&nbsp;&nbsp; Publications Since Joining UA (2025&ndash;Present)</strong></p>
+      <h3>Publications Since Joining UA (2025&ndash;Present)</h3>
+      <p><sup>&dagger;</sup> denotes corresponding author.</p>
 
-      <p><strong>&nbsp;&nbsp;&nbsp; Journal Articles:</strong></p>
-      <dir>
-        <li><strong> Runlong Yu</strong>, Yiqun Xie, Xiaowei Jia. Environmental Computing as a Branch of Science, <i>Communications of the ACM <b>(CACM)</b></i>, v 68, n 7, pages 92-94, 2025.</li><br>
-      </dir>
-
-      <p><strong>&nbsp;&nbsp;&nbsp; Conference Articles:</strong></p>
-      <dir>
-        <li>Yiheng Chen, Lingyao Li, Zihui Ma, Qikai Hu, Yilun Zhu, Min Deng, <strong> Runlong Yu</strong>. Empowering LLM Agents with Geospatial Awareness: Toward Grounded Reasoning for Wildfire Response, <i>Submitted to ACL Rolling Review <b>(ACL ARR)</b></i>, received a recommendation, 2026.</li><br>
-
-        <li>Naiyi Li, Zihui Ma, <strong> Runlong Yu</strong>, Lingyao Li. LSDTs: LLM-Augmented Semantic Digital Twins for Adaptive Knowledge-Intensive Infrastructure Planning, <i>AAAI Conference on Artificial Intelligence <b>(AAAI)</b></i>, accepted, to be published, 2026.</li><br>
-
-        <li>Shiyuan Luo, Chonghao Qiu, <strong> Runlong Yu</strong>, Yiqun Xie, Xiaowei Jia. GREAT: Generalizable Representation Enhancement via Auxiliary Transformations for Zero-Shot Environmental Prediction, <i>AAAI Conference on Artificial Intelligence <b>(AAAI)</b></i>, accepted, to be published, 2026.</li><br>
-
-        <li><strong> Runlong Yu</strong>, Xiaowei Jia. Truth Without Comprehension: A BlueSky Agenda for Steering the Fourth Mathematical Crisis, <i>IEEE International Conference on Data Mining <b>(ICDM)</b>, BlueSky Track</i>, pages 2476-2480, 2025.</li><br>
-
-        <li>Shiyuan Luo*, <strong> Runlong Yu</strong>*, Chonghao Qiu, Rahul Ghosh, Robert Ladwig, Paul C. Hanson, Yiqun Xie, Xiaowei Jia. Learning to Retrieve for Environmental Knowledge Discovery: An Augmentation-Adaptive Self-Supervised Learning Framework, <i>IEEE International Conference on Data Mining <b>(ICDM)</b></i>, pages 527-536, 2025. (*equal contribution)</li><br>
-
-        <li>Shiyuan Luo, <strong> Runlong Yu</strong>, Shengyu Chen, Yingda Fan, Yiqun Xie, Yanhua Li, Xiaowei Jia. Geo-Aware Models for Stream Temperature Prediction across Different Spatial Regions and Scales, <i>ACM International Conference on Advances in Geographic Information Systems <b>(ACM SIGSPATIAL)</b></i>, pages 124-136, 2025.</li><br>
-
-        <li>Lingyao Li, Dawei Li, Zhenhui Ou, Xiaoran Xu, Jingxiao Liu, Zihui Ma, <strong> Runlong Yu</strong>, Min Deng. LLMs as World Models: Data-Driven and Human-Centered Pre-Event Simulation for Disaster Impact Assessment, <i>Conference on Empirical Methods in Natural Language Processing <b>(EMNLP)</b></i>, pages 3078-3096, 2025.</li><br>
-      </dir>
-
-      <p><strong>&nbsp;&nbsp;&nbsp; Publications Prior to UA (Before 2025)</strong></p>
-
-      <p><strong>&nbsp;&nbsp;&nbsp; Journal Articles:</strong></p>
-      <dir>
-        <li><strong> Runlong Yu</strong>, Qi Liu, Yuyang Ye, Mingyue Cheng, Enhong Chen, Jianhui Ma. Collaborative List-and-Pairwise Filtering from Implicit Feedback, <i>IEEE Transactions on Knowledge and Data Engineering <b>(IEEE TKDE)</b></i>, v 34, n 6, pages 2667-2680, 2022.</li><br>
-
-        <li><strong> Runlong Yu</strong>, Hongke Zhao, Zhong Wang, Yuyang Ye, Peining Zhang, Qi Liu, Enhong Chen. Negatively Correlated Search with Asymmetry for Real-Parameter Optimization Problems, <i>Journal of Computer Research and Development <b>(J-CRAD)</b></i>, v 56, n 8, pages 1746-1757, 2019. (in Chinese)</li><br>
-
-        <li>Yin Gu, Kai Zhang, Qi Liu, <strong> Runlong Yu</strong>. &pi;-eLight: Programmatic Interpretable Reinforcement Learning for Effective Traffic Signal Control, <i>IEEE Transactions on Mobile Computing <b>(IEEE TMC)</b></i>, Early Access, 2025.</li><br>
-
-        <li>Xiaojie Li, <strong> Runlong Yu</strong>, Lei Chen, Shengjun Liu, Enhong Chen. Process Optimization of Multi-stage Continuous Production System Based on Feature Fusion Modeling, <i>IEEE Transactions on Automation Science and Engineering <b>(IEEE T-ASE)</b></i>, Early Access, 2025.</li><br>
-
-        <li>Kai Zhang, Hongbo Gang, Feng Hu, <strong> Runlong Yu</strong>, Qi Liu. Adaptive ensemble learning for efficient keyphrase extraction: Diagnosis, aggregation, and distillation, <i>Expert Systems with Applications <b>(ESWA)</b></i>, v 278, Article 127236, 2025.</li><br>
-
-        <li>Yuyang Ye, Hengshu Zhu, Tianyi Cui, <strong> Runlong Yu</strong>, Le Zhang, Hui Xiong. University Evaluation through Graduate Employment Prediction: An Influence based Graph Autoencoder Approach, <i>IEEE Transactions on Knowledge and Data Engineering <b>(IEEE TKDE)</b></i>, v 36, n 11, pages 7255-7267, 2024.</li><br>
-
-        <li>Yuyang Ye, Zheng Dong, Hengshu Zhu, Tong Xu, Xin Song, <strong> Runlong Yu</strong>, Hui Xiong. MANE: Organizational Network Embedding with Multiplex Attentive Neural Networks, <i>IEEE Transactions on Knowledge and Data Engineering <b>(IEEE TKDE)</b></i>, v 35, n 4, pages 4047-4061, 2023.</li><br>
-
-        <li>Huijie Liu, Han Wu, Le Zhang, <strong> Runlong Yu</strong>, Ye Liu, Chunli Liu, Minglei Li, Qi Liu, Enhong Chen. A Hierarchical Interactive Multi-channel Graph Neural Network for Technological Knowledge Flow Forecasting, <i>Knowledge and Information Systems <b>(KAIS)</b></i>, v 64, n 7, pages 1723-1757, 2022.</li><br>
-
-        <li>Qixiang Shao, <strong> Runlong Yu</strong>, Hongke Zhao, Chunli Liu, Mengyi Zhang, Hongmei Song, Qi Liu. Toward Intelligent Financial Advisors for Identifying Potential Clients: A Multitask Perspective, <i>Big Data Mining and Analytics <b>(BDMA)</b></i>, v 5, n 1, pages 64-78, 2022.</li><br>
-      </dir>
-
-      <p><strong>&nbsp;&nbsp;&nbsp; Conference Articles:</strong></p>
-      <dir>
-        <li><strong> Runlong Yu*</strong>, Shengyu Chen*, Yiqun Xie, Xiaowei Jia. A Survey of Foundation Models for Environmental Science, <i>Pacific Asia Conference on Knowledge Discovery and Data Mining <b>(PAKDD)</b></i>, pages 39-57, 2025. (*equal contribution) </li><br>
-
-        <li><strong> Runlong Yu</strong>, Yiqun Xie, Xiaowei Jia. What We Talk About When We Talk About AI for Science, <i>SIAM International Conference on Data Mining <b>(SDM)</b></i>, pages 439-442, 2025.</li><br>
-
-        <li><strong> Runlong Yu</strong>, Chonghao Qiu, Robert Ladwig, Paul C. Hanson, Yiqun Xie, Xiaowei Jia. Physics-Guided Foundation Model for Scientific Discovery: An Application to Aquatic Science, <i>AAAI Conference on Artificial Intelligence <b>(AAAI)</b></i>, v 39, n 27, pages 28548-28556, 2025.</li><br>
-
-        <li><strong> Runlong Yu</strong>, Chonghao Qiu, Robert Ladwig, Paul C. Hanson, Yiqun Xie, Yanhua Li, Xiaowei Jia. Adaptive Process-Guided Learning: An Application in Predicting Lake DO Concentrations, <i>IEEE International Conference on Data Mining <b>(ICDM)</b></i>, pages 580-589, 2024.</li><br>
-
-        <li><strong> Runlong Yu</strong>, Robert Ladwig, Xiang Xu, Peijun Zhu, Paul C. Hanson, Yiqun Xie, Xiaowei Jia. Evolution-based Feature Selection for Predicting Dissolved Oxygen Concentrations in Lakes, <i>International Conference on Parallel Problem Solving from Nature <b>(PPSN)</b></i>, pages 398-415, 2024.</li><br>
-
-        <li><strong> Runlong Yu</strong>, Xiang Xu, Yuyang Ye, Qi Liu, Enhong Chen. Cognitive Evolutionary Search to Select Feature Interactions for Click-Through Rate Prediction, <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining <b>(KDD)</b></i>, pages 3151-3161, 2023.</li><br>
-
-        <li><strong> Runlong Yu</strong>, Qi Liu, Yuyang Ye, Mingyue Cheng, Enhong Chen, Jianhui Ma. Collaborative List-and-Pairwise Filtering from Implicit Feedback (Extended Abstract), <i>IEEE International Conference on Data Engineering <b>(ICDE)</b></i>, pages 3801-3802, 2023.</li><br>
-
-        <li><strong> Runlong Yu</strong>, Yuyang Ye, Qi Liu, Zihan Wang, Chunfeng Yang, Yucheng Hu, Enhong Chen. XCrossNet: Feature Structure-Oriented Learning for Click-Through Rate Prediction, <i>Pacific Asia Conference on Knowledge Discovery and Data Mining <b>(PAKDD)</b></i>, pages 436-447, 2021.</li><br>
-
-        <li><strong> Runlong Yu</strong>, Yunzhou Zhang, Yuyang Ye, Le Wu, Chao Wang, Qi Liu, Enhong Chen. Multiple Pairwise Ranking with Implicit Feedback, <i>ACM Conference on Information and Knowledge Management <b>(CIKM)</b></i>, pages 1727-1730, 2018.</li><br>
-
-        <li>Yiming Sun, <strong> Runlong Yu</strong>, Runxue Bao, Yiqun Xie, Ye Ye, Xiaowei Jia. Domain-Adaptive Continual Meta-Learning for Modeling Dynamical Systems: An Application in Environmental Ecosystems, <i>SIAM International Conference on Data Mining <b>(SDM)</b></i>, pages 297-306, 2025.</li><br>
-
-        <li>Yingda Fan, <strong> Runlong Yu</strong>, Janet Rice Barclay, Alison P. Appling, Yiming Sun, Yiqun Xie, Xiaowei Jia. Multi-Scale Graph Learning for Anti-Sparse Downscaling, <i>AAAI Conference on Artificial Intelligence <b>(AAAI)</b></i>, v 39, n 27, pages 27969-27977, 2025.</li><br>
-
-        <li>Yuyang Ye, Zhi Zheng, Yishan Shen, Tianshu Wang, Hengruo Zhang, Peijun Zhu, <strong> Runlong Yu</strong>, Kai Zhang, Hui Xiong. Harnessing Multimodal Large Language Models for Multimodal Sequential Recommendation, <i>AAAI Conference on Artificial Intelligence <b>(AAAI)</b></i>, v 39, n 12, pages 13069-13077, 2025.</li><br>
-
-        <li>Xiang Xu, Hao Wang, Wei Guo, Luankang Zhang, Wanshan Yang, <strong> Runlong Yu</strong>, Yong Liu, Defu Lian, Enhong Chen. Multi-granularity Interest Retrieval and Refinement Network for Long-Term User Behavior Modeling in CTR Prediction, <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining <b>(KDD)</b></i>, pages 2745-2755, 2025.</li><br>
-
-        <li>Yin Gu, Kai Zhang, Qi Liu, <strong> Runlong Yu</strong>, Xin Lin, Xinjie Sun. ProCC: Programmatic Reinforcement Learning for Efficient and Transparent TCP Congestion Control, <i>ACM International Conference on Web Search and Data Mining <b>(WSDM)</b></i>, pages 963-972, 2025.</li><br>
-
-        <li>Yuyang Ye, Lu-An Tang, Haoyu Wang, <strong> Runlong Yu</strong>, Wenchao Yu, Erhu He, Haifeng Chen, Hui Xiong. PAIL: Performance based Adversarial Imitation Learning Engine for Carbon Neutral Optimization, <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining <b>(KDD)</b></i>, pages 6148-6157, 2024.</li><br>
-
-        <li>Yujie Chen, <strong> Runlong Yu</strong>, Qi Liu, Enhong Chen, Zhenya Huang. Using Entropy for Group Sampling in Pairwise Ranking from Implicit Feedback, <i>International ACM SIGIR Conference on Research and Development in Information Retrieval <b>(SIGIR)</b></i>, pages 2496-2500, 2023.</li><br>
-
-        <li>Xiaojie Li, <strong> Runlong Yu</strong>, Guiquan Liu, Lei Chen, Enhong Chen, Shengjun Liu. Research on Multi-objective Optimization Algorithm for Coal Blending, <i>China National Conference on Big Data and Social Computing <b>(BDSC)</b></i>, pages 37-60, 2023.</li><br>
-
-        <li>Yang Yu, Qi Liu, Likang Wu, <strong> Runlong Yu</strong>, Lei Yu, Zaixi Zhang. Untargeted Attack against Federated Recommendation Systems via Poisonous Item Embeddings and the Defense, <i>AAAI Conference on Artificial Intelligence <b>(AAAI)</b></i>, pages 4854-4863, 2023.</li><br>
-
-        <li>Zhikang Mo, Qixiang Shao, Likang Wu, <strong> Runlong Yu</strong>, Jiexin Xu, Hongmei Song, Enhong Chen. TGNN: A GNN-Based Method with Multi-entity Node for Personal Banking Time Prediction, <i>Intelligent Networked Things: 5th China Conference <b>(CINT)</b></i>, pages 68-79, 2023.</li><br>
-
-        <li>Yuren Zhang, Enhong Chen, Binbin Jin, Hao Wang, Min Hou, Wei Huang, <strong> Runlong Yu</strong>. Clustering based Behavior Sampling with Long Sequential Data for CTR Prediction, <i>International ACM SIGIR Conference on Research and Development in Information Retrieval <b>(SIGIR)</b></i>, pages 2195-2200, 2022.</li><br>
-
-        <li>Zheng Gong, Shiwei Tong, Han Wu, Qi Liu, Hanqing Tao, Wei Huang, <strong> Runlong Yu</strong>. Tipster: A Topic-Guided Language Model for Topic-Aware Text Segmentation, <i>International Conference on Database Systems for Advanced Applications <b>(DASFAA)</b></i>, pages 213-221, 2022.</li><br>
-
-        <li>Huijie Liu, Han Wu, Le Zhang, <strong> Runlong Yu</strong>, Ye Liu, Chunli Liu, Qi Liu, Enhong Chen. Technological Knowledge Flow Forecasting through A Hierarchical Interactive Graph Neural Network, <i>IEEE International Conference on Data Mining <b>(ICDM)</b></i>, pages 389-398, 2021.</li><br>
-
-        <li>Mingyue Cheng, Fajie Yuan, Qi Liu, Shenyang Ge, Zhi Li, <strong> Runlong Yu</strong>, Defu Lian, Senchao Yuan, Enhong Chen. Learning Recommender Systems with Implicit Feedback via Soft Target Enhancement, <i>International ACM SIGIR Conference on Research and Development in Information Retrieval <b>(SIGIR)</b></i>, pages 575-584, 2021.</li><br>
-
-        <li>Shiwei Tong, Qi Liu, <strong> Runlong Yu</strong>, Wei Huang, Zhenya Huang, Zachary A Pardos, Weijie Jiang. Item Response Ranking for Cognitive Diagnosis, <i>International Joint Conference on Artificial Intelligence <b>(IJCAI)</b></i>, pages 1750-1756, 2021.</li><br>
-
-        <li>Yuyang Ye, Hengshu Zhu, Tong Xu, Fuzhen Zhuang, <strong> Runlong Yu</strong>, Hui Xiong. Identifying High Potential Talent: A Neural Network based Dynamic Social Profiling Approach, <i>IEEE International Conference on Data Mining <b>(ICDM)</b></i>, pages 718-727, 2019.</li><br>
-
-        <li>Mingyue Cheng, <strong> Runlong Yu</strong>, Qi Liu, Vincent W. Zheng, Hongke Zhao, Hefu Zhang, Enhong Chen. Alpha-Beta Sampling for Pairwise Ranking in One-Class Collaborative Filtering, <i>IEEE International Conference on Data Mining <b>(ICDM)</b></i>, pages 1000-1005, 2019.</li><br>
-
-        <li>Han Wu, Kun Zhang, Guangyi Lv, <strong> Runlong Yu</strong>, Weihao Zhao, Enhong Chen, Jianhui Ma. Deep Technology Tracing for High-tech Companies, <i>IEEE International Conference on Data Mining <b>(ICDM)</b></i>, pages 1396-1401, 2019.</li><br>
-      </dir>
-
-      <p><strong>&nbsp;&nbsp;&nbsp; Books & Chapters:</strong></p>
-      <dir>
-        <li>Tong Xu, <strong> Runlong Yu</strong>. Epidemic Prevention and Control Big Data Cloud Platform: Solutions for Major Public Health Emergencies, Annual Report on Development of Big Data Applications in China No.4 (2020) (<i><b>Blue Book of Big Data Applications</b></i>), Social Sciences Academic Press, ISBN 978-7-5201-7651-4, 2020.</li><br>
-      </dir>
-
-
-
-
-      <h2 id="collaboration">Invited Talks</h2>
-      <li><strong>[Nov. 2025]</strong> <em>Truth Without Comprehension: A BlueSky Agenda for Steering the Fourth Mathematical Crisis </em></a> in the ICDM 2025 conference, Washington, DC, USA.</li>
-      <li><strong>[May 2025]</strong> <em>What We Talk About When We Talk About AI for Science </em></a> in the SDM 2025 conference, Alexandria, VA, USA.</li>
-      <li><strong>[Aug. 2024]</strong> <em>Adaptive Process-Guided Learning: An Application in Predicting Lake DO Concentrations </em></a> in the KGML 2024 workshop, Minneapolis, MN, USA.</li>
-      <li><strong>[Aug. 2023]</strong> <em>Cognitive Evolutionary Search to Select Feature Interactions for Click-Through Rate Prediction </em></a> in the KDD 2023 conference, Long Beach, CA, USA.</li>
-      <li><strong>[May 2021]</strong> <em>XCrossNet: Feature Structure-Oriented Learning for Click-Through Rate Predictions </em></a> in the PAKDD 2021 conference, Delhi, India.</li>
-      <li><strong>[Aug. 2019]</strong> <em>Negatively Correlated Search with Asymmetry for Real-Parameter Optimization Problems </em></a> in the CCFAI 2019 conference, Xuzhou, China.</li>
-
-
-      <h2 id="services">Academic Services</h2>
-
-      <h4 style="margin:0 10px 0;">Program Committee Member for the following conferences:</h4>
-      <ul style="margin:0 0 5px;">
-        <li>
-          IJCAI 2026, PAKDD 2026, WWW 2026, AAAI 2026,
-          WWW 2025, AAAI 2025, IJCAI 2025, PAKDD 2025,
-          AAAI 2024, IJCAI 2024, AAAI 2023, IJCAI 2023,
-          AAAI 2022, IJCAI 2022, AAAI 2021, IJCAI 2021, etc.
-        </li>
-        <br>
+      <h3>Journal Articles</h3>
+      <ul class="publication-list">
+        <li><strong>Runlong Yu</strong>, Yiqun Xie, Xiaowei Jia. Environmental Computing as a Branch of Science,
+          <i>Communications of the ACM <strong>(CACM)</strong></i>, v 68, n 7, pages 92&ndash;94, 2025.</li>
       </ul>
 
-      <h4 style="margin:0 10px 0;">Reviewer for the following conferences:</h4>
-      <ul style="margin:0 0 5px;">
-        <li>
-          AISTATS 2026, ICML 2025, AISTATS 2025, ICLR 2025,
-          NeurIPS 2024, ICLR 2024, ICML 2024,
-          NeurIPS 2023, ICML 2023, NeurIPS 2022, ICML 2022, etc.
+      <h3>Conference Articles</h3>
+      <ul class="publication-list">
+        <li>Yilong Dai, Shengyu Chen, Xiaowei Jia, <strong>Runlong Yu</strong><sup>&dagger;</sup>. Flow Learners for
+          PDEs: Toward a Physics-to-Physics Paradigm for Scientific Computing. <i>ACM SIGKDD Conference on
+            Knowledge Discovery and Data Mining <strong>(KDD)</strong>, Blue Sky Ideas Track</i>, accepted, to be
+          published, 2026. Blue Sky Ideas Track Acceptance Rate: 23.6%.</li>
+
+        <li>Qi Cheng, Licheng Liu, Yixuan Chen, Qing Zhu, <strong>Runlong Yu</strong>, Zhenong Jin, Yiqun Xie,
+          Xiaowei Jia. LLM-based Evaluation Policy Extraction for Ecological Modeling. <i>ACM SIGKDD Conference on
+            Knowledge Discovery and Data Mining <strong>(KDD)</strong>, AI4Sciences Track</i>, accepted, to be
+          published, 2026. AI4Sciences Track Acceptance Rate: 30.8%.</li>
+
+        <li>Yilong Dai, Shengyu Chen, Ziyi Wang, Xiaowei Jia, Yiqun Xie, Vipin Kumar,
+          <strong>Runlong Yu</strong><sup>&dagger;</sup>. Learning PDE Solvers with Physics and Data: A Unifying View of
+          Physics-Informed Neural Networks and Neural Operators. <i>International Joint Conference on Artificial
+            Intelligence <strong>(IJCAI)</strong>, Survey Track</i>, accepted, to be published, 2026.</li>
+
+        <li>Yiming Sun, Qi Cheng, Licheng Liu, <strong>Runlong Yu</strong>, Yiqun Xie, Xiaowei Jia.
+          Retrieval-Augmented Multi-scale Framework for County-Level Crop Yield Prediction Across Large Regions.
+          <i>SIAM International Conference on Data Mining <strong>(SDM)</strong></i>, accepted, to be published,
+          2026. Acceptance Rate: 26.0%.</li>
+
+        <li>Yiheng Chen, Zihui Ma, Peishi Jiang, Yilong Dai, Qikai Hu, Xinyue Ye, Lingyao Li, Rita Leal Sousa,
+          <strong>Runlong Yu</strong><sup>&dagger;</sup>. When Earth Foundation Models Meet Diffusion: An Application
+          to Land Surface Temperature Super-Resolution. <i>SIAM International Conference on Data Mining
+            <strong>(SDM)</strong></i>, accepted, to be published, 2026. Acceptance Rate: 26.0%.</li>
+
+        <li>Yilong Dai, Yiming Sun, Yiheng Chen, Shengyu Chen, Xiaowei Jia,
+          <strong>Runlong Yu</strong><sup>&dagger;</sup>. FlowRefiner: Flow Matching-Based Iterative Refinement for 3D Turbulent
+          Flow Simulation. <i>SIAM International Conference on Data Mining <strong>(SDM)</strong></i>, accepted, to
+          be published, 2026. Acceptance Rate: 26.0%.</li>
+
+        <li>Lingyao Li<sup>*&dagger;</sup>, <strong>Runlong Yu</strong><sup>*&dagger;</sup>, Qikai Hu, Bowei Li, Min
+          Deng, Yang Zhou, Xiaowei Jia. From Pixels to Places: A Systematic Benchmark for Evaluating Image
+          Geolocalization Ability in Large Language Models. <i>Submitted to ACL Rolling Review <strong>(ACL
+              ARR)</strong></i>, received a recommendation, 2026.
+          <span class="publication-note"><sup>*</sup> Equal contribution; Lingyao Li and Runlong Yu are co-first
+            authors and co-corresponding authors.</span>
         </li>
-        <br>
+
+        <li>Yiheng Chen, Lingyao Li, Zihui Ma, Qikai Hu, Yilun Zhu, Min Deng,
+          <strong>Runlong Yu</strong><sup>&dagger;</sup>. Empowering LLM Agents with Geospatial Awareness: Toward Grounded Reasoning
+          for Wildfire Response. <i>Submitted to ACL Rolling Review <strong>(ACL ARR)</strong></i>, received a
+          recommendation, 2026.</li>
+
+        <li>Naiyi Li, Zihui Ma, <strong>Runlong Yu</strong><sup>&dagger;</sup>, Lingyao Li<sup>&dagger;</sup>. LSDTs:
+          LLM-Augmented Semantic Digital Twins for Adaptive Knowledge-Intensive Infrastructure Planning. <i>AAAI
+            Conference on Artificial Intelligence <strong>(AAAI)</strong></i>, pages 38871&ndash;38879, 2026. AISI
+          Track Acceptance Rate: 24.1%.</li>
+
+        <li>Shiyuan Luo, Chonghao Qiu, <strong>Runlong Yu</strong>, Yiqun Xie, Xiaowei Jia. GREAT: Generalizable
+          Representation Enhancement via Auxiliary Transformations for Zero-Shot Environmental Prediction. <i>AAAI
+            Conference on Artificial Intelligence <strong>(AAAI)</strong></i>, pages 38998&ndash;39006, 2026. AISI
+          Track Acceptance Rate: 24.1%.</li>
+
+        <li><strong>Runlong Yu</strong>, Xiaowei Jia. Truth Without Comprehension: A BlueSky Agenda for Steering the
+          Fourth Mathematical Crisis. <i>IEEE International Conference on Data Mining Workshops
+            <strong>(ICDMW)</strong>, BlueSky Track</i>, pages 2472&ndash;2476, 2025. Best BlueSky Paper Award (First
+          Prize).</li>
+
+        <li>Shiyuan Luo<sup>*</sup>, <strong>Runlong Yu</strong><sup>*</sup>, Chonghao Qiu, Rahul Ghosh, Robert
+          Ladwig, Paul C. Hanson, Yiqun Xie, Xiaowei Jia. Learning to Retrieve for Environmental Knowledge
+          Discovery: An Augmentation-Adaptive Self-Supervised Learning Framework. <i>IEEE International Conference
+            on Data Mining <strong>(ICDM)</strong></i>, pages 527&ndash;536, 2025.
+          <span class="publication-note"><sup>*</sup> Equal contribution.</span>
+        </li>
+
+        <li>Shiyuan Luo, <strong>Runlong Yu</strong>, Shengyu Chen, Yingda Fan, Yiqun Xie, Yanhua Li, Xiaowei Jia.
+          Geo-Aware Models for Stream Temperature Prediction across Different Spatial Regions and Scales. <i>ACM
+            International Conference on Advances in Geographic Information Systems <strong>(ACM
+              SIGSPATIAL)</strong></i>, pages 124&ndash;136, 2025.</li>
+
+        <li>Lingyao Li, Dawei Li, Zhenhui Ou, Xiaoran Xu, Jingxiao Liu, Zihui Ma, <strong>Runlong Yu</strong>, Min
+          Deng. LLMs as World Models: Data-Driven and Human-Centered Pre-Event Simulation for Disaster Impact
+          Assessment. <i>Conference on Empirical Methods in Natural Language Processing
+            <strong>(EMNLP)</strong></i>, pages 3078&ndash;3096, 2025.</li>
       </ul>
 
-      <h4 style="margin:0 10px 0;">Reviewer for the following journals:</h4>
-      <ul style="margin:0 0 5px;">
-        <li>
-          IEEE Transactions on Knowledge and Data Engineering (TKDE),
-          IEEE Transactions on Big Data,
-          ACM Transactions on Knowledge Discovery from Data (TKDD),
-          ACM Transactions on Recommender Systems (TORS),
-          IEEE Transactions on Systems, Man, and Cybernetics: Systems,
-          Communications of the ACM,
-          Advanced Science, etc.
-        </li>
-        <br>
+      <h3>Publications Prior to Joining UA</h3>
+
+      <h3>Journal Articles</h3>
+      <ul class="publication-list">
+        <li>Yin Gu, Kai Zhang, Qi Liu, Haojie Yuan, <strong>Runlong Yu</strong>. &pi;-eLight: Learning Interpretable
+          Programmatic Policies for Effective Traffic Signal Control. <i>IEEE Transactions on Mobile Computing
+            <strong>(IEEE TMC)</strong></i>, v 25, n 1, pages 1122&ndash;1136, 2026.</li>
+
+        <li>Xiaojie Li, <strong>Runlong Yu</strong>, Lei Chen, Shengjun Liu, Enhong Chen. Process Optimization of
+          Multi-stage Continuous Production System Based on Feature Fusion Modeling. <i>IEEE Transactions on
+            Automation Science and Engineering <strong>(IEEE T-ASE)</strong></i>, v 22, pages 21512&ndash;21524,
+          2025.</li>
+
+        <li>Kai Zhang, Hongbo Gang, Feng Hu, <strong>Runlong Yu</strong>, Qi Liu. Adaptive ensemble learning for
+          efficient keyphrase extraction: Diagnosis, aggregation, and distillation. <i>Expert Systems with
+            Applications <strong>(ESWA)</strong></i>, v 278, Article 127236, 2025.</li>
+
+        <li>Yuyang Ye, Hengshu Zhu, Tianyi Cui, <strong>Runlong Yu</strong>, Le Zhang, Hui Xiong. University
+          Evaluation through Graduate Employment Prediction: An Influence based Graph Autoencoder Approach. <i>IEEE
+            Transactions on Knowledge and Data Engineering <strong>(IEEE TKDE)</strong></i>, v 36, n 11, pages
+          7255&ndash;7267, 2024.</li>
+
+        <li>Yuyang Ye, Zheng Dong, Hengshu Zhu, Tong Xu, Xin Song, <strong>Runlong Yu</strong>, Hui Xiong. MANE:
+          Organizational Network Embedding with Multiplex Attentive Neural Networks. <i>IEEE Transactions on
+            Knowledge and Data Engineering <strong>(IEEE TKDE)</strong></i>, v 35, n 4, pages 4047&ndash;4061,
+          2023.</li>
+
+        <li><strong>Runlong Yu</strong>, Qi Liu, Yuyang Ye, Mingyue Cheng, Enhong Chen, Jianhui Ma. Collaborative
+          List-and-Pairwise Filtering from Implicit Feedback. <i>IEEE Transactions on Knowledge and Data Engineering
+            <strong>(IEEE TKDE)</strong></i>, v 34, n 6, pages 2667&ndash;2680, 2022.</li>
+
+        <li>Huijie Liu, Han Wu, Le Zhang, <strong>Runlong Yu</strong>, Ye Liu, Chunli Liu, Minglei Li, Qi Liu, Enhong
+          Chen. A Hierarchical Interactive Multi-channel Graph Neural Network for Technological Knowledge Flow
+          Forecasting. <i>Knowledge and Information Systems <strong>(KAIS)</strong></i>, v 64, n 7, pages
+          1723&ndash;1757, 2022.</li>
+
+        <li>Qixiang Shao, <strong>Runlong Yu</strong>, Hongke Zhao, Chunli Liu, Mengyi Zhang, Hongmei Song, Qi Liu.
+          Toward Intelligent Financial Advisors for Identifying Potential Clients: A Multitask Perspective. <i>Big
+            Data Mining and Analytics <strong>(BDMA)</strong></i>, v 5, n 1, pages 64&ndash;78, 2022.</li>
+
+        <li><strong>Runlong Yu</strong>, Hongke Zhao, Zhong Wang, Yuyang Ye, Peining Zhang, Qi Liu, Enhong Chen.
+          Negatively Correlated Search with Asymmetry for Real-Parameter Optimization Problems. <i>Journal of
+            Computer Research and Development <strong>(J-CRAD)</strong></i>, v 56, n 8, pages 1746&ndash;1757, 2019.
+          (in Chinese)</li>
       </ul>
 
+      <h3>Conference Articles</h3>
+      <ul class="publication-list">
+        <li><strong>Runlong Yu</strong><sup>*</sup>, Shengyu Chen<sup>*</sup>, Yiqun Xie, Xiaowei Jia. A Survey of
+          Foundation Models for Environmental Science. <i>Pacific Asia Conference on Knowledge Discovery and Data
+            Mining <strong>(PAKDD)</strong></i>, pages 39&ndash;57, 2025.
+          <span class="publication-note"><sup>*</sup> Equal contribution.</span>
+        </li>
 
+        <li><strong>Runlong Yu</strong>, Yiqun Xie, Xiaowei Jia. What We Talk About When We Talk About AI for
+          Science. <i>SIAM International Conference on Data Mining <strong>(SDM)</strong></i>, pages 439&ndash;442,
+          2025.</li>
 
-      <br>
+        <li><strong>Runlong Yu</strong>, Chonghao Qiu, Robert Ladwig, Paul C. Hanson, Yiqun Xie, Xiaowei Jia.
+          Physics-Guided Foundation Model for Scientific Discovery: An Application to Aquatic Science. <i>AAAI
+            Conference on Artificial Intelligence <strong>(AAAI)</strong></i>, v 39, n 27, pages 28548&ndash;28556,
+          2025.</li>
 
+        <li>Yiming Sun, <strong>Runlong Yu</strong>, Runxue Bao, Yiqun Xie, Ye Ye, Xiaowei Jia. Domain-Adaptive
+          Continual Meta-Learning for Modeling Dynamical Systems: An Application in Environmental Ecosystems. <i>SIAM
+            International Conference on Data Mining <strong>(SDM)</strong></i>, pages 297&ndash;306, 2025.</li>
 
-<div style="max-width: 320px; margin: 10px auto 0; text-align:center;">
-  <script type="text/javascript" id="clustrmaps"
-    src="//clustrmaps.com/map_v2.js?d=74w9WND-LIqEyC1D1Ch3k5FclBe-eOa6GaqaQ2i-X_g&cl=ffffff&w=a">
-  </script>
-</div>
+        <li>Yingda Fan, <strong>Runlong Yu</strong>, Janet Rice Barclay, Alison P. Appling, Yiming Sun, Yiqun Xie,
+          Xiaowei Jia. Multi-Scale Graph Learning for Anti-Sparse Downscaling. <i>AAAI Conference on Artificial
+            Intelligence <strong>(AAAI)</strong></i>, v 39, n 27, pages 27969&ndash;27977, 2025.</li>
 
+        <li>Yuyang Ye, Zhi Zheng, Yishan Shen, Tianshu Wang, Hengruo Zhang, Peijun Zhu, <strong>Runlong Yu</strong>,
+          Kai Zhang, Hui Xiong. Harnessing Multimodal Large Language Models for Multimodal Sequential Recommendation.
+          <i>AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong></i>, v 39, n 12, pages
+          13069&ndash;13077, 2025.</li>
 
+        <li>Xiang Xu, Hao Wang, Wei Guo, Luankang Zhang, Wanshan Yang, <strong>Runlong Yu</strong>, Yong Liu, Defu
+          Lian, Enhong Chen. Multi-granularity Interest Retrieval and Refinement Network for Long-Term User Behavior
+          Modeling in CTR Prediction. <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+            <strong>(KDD)</strong></i>, pages 2745&ndash;2755, 2025.</li>
 
+        <li>Yin Gu, Kai Zhang, Qi Liu, <strong>Runlong Yu</strong>, Xin Lin, Xinjie Sun. ProCC: Programmatic
+          Reinforcement Learning for Efficient and Transparent TCP Congestion Control. <i>ACM International
+            Conference on Web Search and Data Mining <strong>(WSDM)</strong></i>, pages 963&ndash;972, 2025.</li>
+
+        <li><strong>Runlong Yu</strong>, Chonghao Qiu, Robert Ladwig, Paul C. Hanson, Yiqun Xie, Yanhua Li, Xiaowei
+          Jia. Adaptive Process-Guided Learning: An Application in Predicting Lake DO Concentrations. <i>IEEE
+            International Conference on Data Mining <strong>(ICDM)</strong></i>, pages 580&ndash;589, 2024.</li>
+
+        <li><strong>Runlong Yu</strong>, Robert Ladwig, Xiang Xu, Peijun Zhu, Paul C. Hanson, Yiqun Xie, Xiaowei Jia.
+          Evolution-based Feature Selection for Predicting Dissolved Oxygen Concentrations in Lakes.
+          <i>International Conference on Parallel Problem Solving from Nature <strong>(PPSN)</strong></i>, pages
+          398&ndash;415, 2024.</li>
+
+        <li>Yuyang Ye, Lu-An Tang, Haoyu Wang, <strong>Runlong Yu</strong>, Wenchao Yu, Erhu He, Haifeng Chen, Hui
+          Xiong. PAIL: Performance based Adversarial Imitation Learning Engine for Carbon Neutral Optimization. <i>ACM
+            SIGKDD Conference on Knowledge Discovery and Data Mining <strong>(KDD)</strong></i>, pages
+          6148&ndash;6157, 2024.</li>
+
+        <li><strong>Runlong Yu</strong>, Xiang Xu, Yuyang Ye, Qi Liu, Enhong Chen. Cognitive Evolutionary Search to
+          Select Feature Interactions for Click-Through Rate Prediction. <i>ACM SIGKDD Conference on Knowledge
+            Discovery and Data Mining <strong>(KDD)</strong></i>, pages 3151&ndash;3161, 2023.</li>
+
+        <li><strong>Runlong Yu</strong>, Qi Liu, Yuyang Ye, Mingyue Cheng, Enhong Chen, Jianhui Ma. Collaborative
+          List-and-Pairwise Filtering from Implicit Feedback (Extended Abstract). <i>IEEE International Conference on
+            Data Engineering <strong>(ICDE)</strong></i>, pages 3801&ndash;3802, 2023.</li>
+
+        <li>Yujie Chen, <strong>Runlong Yu</strong>, Qi Liu, Enhong Chen, Zhenya Huang. Using Entropy for Group
+          Sampling in Pairwise Ranking from Implicit Feedback. <i>International ACM SIGIR Conference on Research and
+            Development in Information Retrieval <strong>(SIGIR)</strong></i>, pages 2496&ndash;2500, 2023.</li>
+
+        <li>Xiaojie Li, <strong>Runlong Yu</strong>, Guiquan Liu, Lei Chen, Enhong Chen, Shengjun Liu. Research on
+          Multi-objective Optimization Algorithm for Coal Blending. <i>China National Conference on Big Data and
+            Social Computing <strong>(BDSC)</strong></i>, pages 37&ndash;60, 2023.</li>
+
+        <li>Yang Yu, Qi Liu, Likang Wu, <strong>Runlong Yu</strong>, Lei Yu, Zaixi Zhang. Untargeted Attack against
+          Federated Recommendation Systems via Poisonous Item Embeddings and the Defense. <i>AAAI Conference on
+            Artificial Intelligence <strong>(AAAI)</strong></i>, pages 4854&ndash;4863, 2023.</li>
+
+        <li>Zhikang Mo, Qixiang Shao, Likang Wu, <strong>Runlong Yu</strong>, Jiexin Xu, Hongmei Song, Enhong Chen.
+          TGNN: A GNN-Based Method with Multi-entity Node for Personal Banking Time Prediction. <i>Intelligent
+            Networked Things: 5th China Conference <strong>(CINT)</strong></i>, pages 68&ndash;79, 2023.</li>
+
+        <li>Yuren Zhang, Enhong Chen, Binbin Jin, Hao Wang, Min Hou, Wei Huang, <strong>Runlong Yu</strong>. Clustering
+          based Behavior Sampling with Long Sequential Data for CTR Prediction. <i>International ACM SIGIR Conference
+            on Research and Development in Information Retrieval <strong>(SIGIR)</strong></i>, pages 2195&ndash;2200,
+          2022.</li>
+
+        <li>Zheng Gong, Shiwei Tong, Han Wu, Qi Liu, Hanqing Tao, Wei Huang, <strong>Runlong Yu</strong>. Tipster: A
+          Topic-Guided Language Model for Topic-Aware Text Segmentation. <i>International Conference on Database
+            Systems for Advanced Applications <strong>(DASFAA)</strong></i>, pages 213&ndash;221, 2022.</li>
+
+        <li>Huijie Liu, Han Wu, Le Zhang, <strong>Runlong Yu</strong>, Ye Liu, Chunli Liu, Qi Liu, Enhong Chen.
+          Technological Knowledge Flow Forecasting through A Hierarchical Interactive Graph Neural Network. <i>IEEE
+            International Conference on Data Mining <strong>(ICDM)</strong></i>, pages 389&ndash;398, 2021.</li>
+
+        <li>Mingyue Cheng, Fajie Yuan, Qi Liu, Shenyang Ge, Zhi Li, <strong>Runlong Yu</strong>, Defu Lian, Senchao
+          Yuan, Enhong Chen. Learning Recommender Systems with Implicit Feedback via Soft Target Enhancement.
+          <i>International ACM SIGIR Conference on Research and Development in Information Retrieval
+            <strong>(SIGIR)</strong></i>, pages 575&ndash;584, 2021.</li>
+
+        <li><strong>Runlong Yu</strong>, Yuyang Ye, Qi Liu, Zihan Wang, Chunfeng Yang, Yucheng Hu, Enhong Chen.
+          XCrossNet: Feature Structure-Oriented Learning for Click-Through Rate Prediction. <i>Pacific Asia Conference
+            on Knowledge Discovery and Data Mining <strong>(PAKDD)</strong></i>, pages 436&ndash;447, 2021.</li>
+
+        <li>Shiwei Tong, Qi Liu, <strong>Runlong Yu</strong>, Wei Huang, Zhenya Huang, Zachary A. Pardos, Weijie
+          Jiang. Item Response Ranking for Cognitive Diagnosis. <i>International Joint Conference on Artificial
+            Intelligence <strong>(IJCAI)</strong></i>, pages 1750&ndash;1756, 2021.</li>
+
+        <li>Yuyang Ye, Hengshu Zhu, Tong Xu, Fuzhen Zhuang, <strong>Runlong Yu</strong>, Hui Xiong. Identifying High
+          Potential Talent: A Neural Network based Dynamic Social Profiling Approach. <i>IEEE International Conference
+            on Data Mining <strong>(ICDM)</strong></i>, pages 718&ndash;727, 2019.</li>
+
+        <li>Mingyue Cheng, <strong>Runlong Yu</strong>, Qi Liu, Vincent W. Zheng, Hongke Zhao, Hefu Zhang, Enhong
+          Chen. Alpha-Beta Sampling for Pairwise Ranking in One-Class Collaborative Filtering. <i>IEEE International
+            Conference on Data Mining <strong>(ICDM)</strong></i>, pages 1000&ndash;1005, 2019.</li>
+
+        <li>Han Wu, Kun Zhang, Guangyi Lv, <strong>Runlong Yu</strong>, Weihao Zhao, Enhong Chen, Jianhui Ma. Deep
+          Technology Tracing for High-tech Companies. <i>IEEE International Conference on Data Mining
+            <strong>(ICDM)</strong></i>, pages 1396&ndash;1401, 2019.</li>
+
+        <li><strong>Runlong Yu</strong>, Yunzhou Zhang, Yuyang Ye, Le Wu, Chao Wang, Qi Liu, Enhong Chen. Multiple
+          Pairwise Ranking with Implicit Feedback. <i>ACM Conference on Information and Knowledge Management
+            <strong>(CIKM)</strong></i>, pages 1727&ndash;1730, 2018.</li>
+      </ul>
+
+      <h3>Books &amp; Chapters</h3>
+      <ul class="publication-list">
+        <li>Tong Xu, <strong>Runlong Yu</strong>. Epidemic Prevention and Control Big Data Cloud Platform: Solutions
+          for Major Public Health Emergencies. <i>Annual Report on Development of Big Data Applications in China No.
+            4 (2020) (<strong>Blue Book of Big Data Applications</strong>)</i>, Social Sciences Academic Press, ISBN
+          978-7-5201-7651-4, 2020.</li>
+      </ul>
+
+      <h2 id="funding">Research Funding</h2>
+      <ul class="entry-list">
+        <li><strong>Development of an End-User-Driven Inland Water Quality Monitoring and Decision-Support System
+            Powered by NASA-IBM Prithvi-EO2 Foundation Model</strong><br>
+          National Aeronautics and Space Administration (NASA), Award No. 80NSSC26K0971, $749,999,
+          2026&ndash;2029. <strong>Status:</strong> Funded.<br>
+          <strong>Role:</strong> Runlong Yu &mdash; Co-Investigator. <strong>PI:</strong> Hongxing Liu.
+          <strong>Other Co-Investigators:</strong> Yuehan Lu and Christopher Impellitteri.</li>
+      </ul>
+
+      <h2 id="invited-talks">Invited Talks</h2>
+      <ul class="entry-list">
+        <li><strong class="date-label">[Mar. 2026]</strong> &ldquo;Advance Water Monitoring Using Machine
+          Learning.&rdquo; Environmental Data Initiative (EDI) Power Users Meeting, Sacramento, CA, USA.</li>
+        <li><strong class="date-label">[Mar. 2026]</strong> &ldquo;Geospatial Intelligence in Large Language
+          Models.&rdquo; OM&ndash;ST PhD Seminar, Department of Information Systems, Statistics, and Management Science,
+          The University of Alabama, Tuscaloosa, AL, USA.</li>
+        <li><strong class="date-label">[Nov. 2025]</strong> &ldquo;Truth Without Comprehension: A BlueSky Agenda for
+          Steering the Fourth Mathematical Crisis.&rdquo; IEEE International Conference on Data Mining (ICDM 2025),
+          Washington, DC, USA.</li>
+        <li><strong class="date-label">[May 2025]</strong> &ldquo;What We Talk About When We Talk About AI for
+          Science.&rdquo; SIAM International Conference on Data Mining (SDM 2025), Alexandria, VA, USA.</li>
+        <li><strong class="date-label">[Aug. 2024]</strong> &ldquo;Adaptive Process-Guided Learning: An Application
+          in Predicting Lake DO Concentrations.&rdquo; KGML 2024 Workshop, Minneapolis, MN, USA.</li>
+        <li><strong class="date-label">[Aug. 2023]</strong> &ldquo;Cognitive Evolutionary Search to Select Feature
+          Interactions for Click-Through Rate Prediction.&rdquo; ACM SIGKDD Conference on Knowledge Discovery and Data
+          Mining (KDD 2023), Long Beach, CA, USA.</li>
+        <li><strong class="date-label">[May 2021]</strong> &ldquo;XCrossNet: Feature Structure-Oriented Learning for
+          Click-Through Rate Prediction.&rdquo; Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD
+          2021), Delhi, India.</li>
+        <li><strong class="date-label">[Aug. 2019]</strong> &ldquo;Negatively Correlated Search with Asymmetry for
+          Real-Parameter Optimization Problems.&rdquo; CCFAI 2019, Xuzhou, China.</li>
+      </ul>
+
+      <h2 id="services">Academic and Departmental Services</h2>
+
+      <h3>Conference Program Committee / Reviewing</h3>
+      <p class="service-list">AAAI 2027 (Main Conference &amp; AI for Social Impact Track); KDD 2027 (AI4Sciences
+        &amp; Datasets and Benchmarks Tracks); NeurIPS 2026; ICML 2026; ACL ARR 2026; IJCAI 2026; KDD 2026
+        (AI4Sciences Track); AAAI 2026; WWW 2026; PAKDD 2026; AISTATS 2026; WWW 2025; AAAI 2025; IJCAI 2025; PAKDD
+        2025; ICML 2025; AISTATS 2025; ICLR 2025; NeurIPS 2024; ICLR 2024; ICML 2024; AAAI 2024; IJCAI 2024;
+        NeurIPS 2023; ICML 2023; AAAI 2023; IJCAI 2023; NeurIPS 2022; ICML 2022; AAAI 2022; IJCAI 2022; AAAI 2021;
+        IJCAI 2021.</p>
+
+      <h3>Journal Reviewing</h3>
+      <p class="service-list">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI); IEEE
+        Transactions on Knowledge and Data Engineering (TKDE); IEEE Transactions on Big Data; IEEE Transactions on
+        Systems, Man, and Cybernetics: Systems; ACM Computing Surveys (CSUR); ACM Transactions on Knowledge Discovery
+        from Data (TKDD); ACM Transactions on Recommender Systems; Communications of the ACM; Advanced Science; etc.
+      </p>
+
+      <h3>Departmental Service</h3>
+      <ul class="entry-list">
+        <li><strong>Member, CS Curriculum Committee</strong>, 2025&ndash;Present<br>
+          Undergraduate Curriculum, Department of Computer Science, The University of Alabama</li>
+      </ul>
+
+      <div style="max-width: 320px; margin: 18px auto 0; text-align: center;">
+        <script id="clustrmaps"
+          src="//clustrmaps.com/map_v2.js?d=74w9WND-LIqEyC1D1Ch3k5FclBe-eOa6GaqaQ2i-X_g&amp;cl=ffffff&amp;w=a">
+        </script>
+      </div>
     </section>
-    <footer>
 
-    </footer>
+    <footer></footer>
   </div>
-  <script src="/%20/assets/js/scale.fix.js"></script>
 
+  <script src="./assets/js/scale.fix.js"></script>
   <script>
     (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      };
+      i[r].l = 1 * new Date();
+      a = s.createElement(o);
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-111540567-4', 'auto');
     ga('send', 'pageview');
   </script>
-
 </body>
 
 </html>
