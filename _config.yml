@@ -1,34 +1,33 @@
-url: "runlongyu.github.io "
+url: "https://runlongyu.github.io"
 # baseurl: runlongyu.github.io 
 # Basic Information
 title: Runlong Yu
 # subtitle:
-position: Postdoctoral Associate
-affiliation: University of Pittsburgh
-affiliation_link: https://www.cs.pitt.edu/
-email: ruy59@pitt.edu
-address: 147 North Craig Street, Pittsburgh PA 15213
+position: Assistant Professor
+affiliation: Department of Computer Science, The University of Alabama
+affiliation_link: https://cs.ua.edu/
+email: ryu5@ua.edu
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+keywords: Runlong Yu, AI for Science, scientific machine learning, physics-guided machine learning, foundation models, generative AI, GeoAI, environmental AI
+description: Runlong Yu is an Assistant Professor of Computer Science at The University of Alabama working on AI for science, scientific machine learning, foundation models, GeoAI, and environmental applications.
+canonical: https://runlongyu.github.io/
 
 # Links
 # If you don't need one of them, you may delete the corresponding line.
 google_scholar: https://scholar.google.com/citations?user=AoZhHP4AAAAJ&hl=zh-CN&oi=ao
-# cv_link: assets/files/HanchaoZhangCV.pdf
+cv_link: assets/files/CV_RunlongYu_hp_202608.pdf
 github_link: https://github.com/RunlongYu
 linkedin: https://www.linkedin.com/in/runlongyu
 
 
 # Images (e.g., your profile picture and your website's favicon)
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively.
-avatar: ./assets/img/runlongyu-portrait.jpg
+avatar: ./assets/img/Runlongyu-portrait-v2.jpg
 # logo: ./assets/img/logo.png
-favicon: ./assets/img/upitt-seal-favicon.png
-favicon_dark: ./assets/img/upitt-seal-favicon.png
+favicon: ./assets/img/ua-square-logo.png
+favicon_dark: ./assets/img/ua-square-logo.png
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
